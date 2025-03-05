@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VENTI - Seu Guia Inteligente</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1><span class="highlight">VENTI - Descubra a Inovação</span></h1>
+    </header>
+
+    <main>
+        <section class="container">
+            <h2>🚀 ATENÇÃO: Inscreva-se para fazer parte da <span class="highlight">VENTI</span> e viver novas experiências <span class="highlight">PERSONALIZADAS</span></h2>
+            <p>Cadastre-se para receber o <strong>VENTI APP</strong> no lançamento. Tenha acesso exclusivo a roteiros personalizados, eventos em tempo real e benefícios especiais.</p>
+            
+            <section id="inscricao" class="form-section">
+                <form id="signupForm" method="POST">
+                    <input type="text" name="nome" placeholder="Seu nome" required>
+                    <input type="email" name="email" placeholder="Seu e-mail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Digite um e-mail válido.">
+                    <button type="submit">Enviar</button>
+                </form>
+                <div id="responseMessage" style="display: none; margin-top: 10px;"></div>
+
+
+            </section>
+        </section>
+        
+        <div style="position: relative; width: 100%; height: 0; padding-top: 56.2225%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https://www.canva.com/design/DAGgN_0W4lk/qCB5EqTEToZkwZhgIgj17Q/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGgN_0W4lk&#x2F;qCB5EqTEToZkwZhgIgj17Q&#x2F;view?utm_content=DAGgN_0W4lk&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"></a>
+
+        <section id="proposta-valor" class="proposta-valor">
+            <div class="container">
+                <h2>🚀 Descubra, Viva e Conecte-se com sua Cidade de um Jeito Único!</h2>
+                <p>
+                    A <strong>VENTI</strong> transforma sua experiência turística e comercial, conectando você aos melhores 
+                    eventos, comércios e atrações culturais da cidade. Nossa <strong>Inteligência Artificial</strong> cria roteiros 
+                    personalizados, tornando cada jornada inesquecível.
+                </p>
+                <div class="benefits">
+                    <li>✅ Experiências sob medida</li>
+                    <li>✅ Apoio ao comércio local</li>
+                    <li>✅ Conexão entre turismo e cultura</li>
+                    <li>✅ Interatividade e engajamento</li>
+                    <li>✅ Facilidade e praticidade</li>
+                </div>
+                <a href="#inscricao" class="cta-btn">Quero me conectar!</a>
+            </div>
+        </section>
+
+        <section class="faq">
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    const questions = document.querySelectorAll(".faq-question");
+                
+                    questions.forEach((question) => {
+                        question.addEventListener("click", function () {
+                            const answer = this.nextElementSibling;
+                            const arrow = this.querySelector(".arrow");
+                
+                            if (answer.style.display === "block") {
+                                answer.style.display = "none";
+                                arrow.style.transform = "rotate(0deg)";
+                            } else {
+                                answer.style.display = "block";
+                                arrow.style.transform = "rotate(180deg)";
+                            }
+                        });
+                    });
+                });
+                </script>
+            <h1>Dúvidas Frequentes</h1>
+            <div class="faq-item">
+                <button class="faq-question">O que é a VENTI? <span class="arrow">▼</span></button>
+                <div class="faq-answer">A VENTI é uma plataforma que conecta turismo, cultura e comércio local.</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">O APP é gratuito?<span class="arrow">▼</span></button>
+                <div class="faq-answer">Sim! Terá versão premium e gratuita. Você pode explorar eventos, locais e promoções gratuitamente.</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Como funciona a personalização de roteiros? <span class="arrow">▼</span></button>
+                <div class="faq-answer">Utilizamos IA para criar roteiros baseados nas suas preferências e interesses.</div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer class="footer">
+        <h3>&copy; 2025 VENTI. Todos os direitos reservados.</h3>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

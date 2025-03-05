@@ -1,0 +1,248 @@
+/* Reset geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primary-color: #4A0072; /* Roxo profundo, elegante e moderno */
+    --secondary-color: #FFC107; /* Amarelo vibrante para CTA e destaque */
+    --background-gradient: linear-gradient(to right, #311B92, #4A0072);
+    --text-color: #FFFFFF;
+    --text-dark: #1E1E1E;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--background-gradient);
+    color: var(--text-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 22px;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    width: 100%;
+    background: linear-gradient(to right, #ee5700b2, #d48815);
+    padding: 20px 0;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 1000px;
+    max-height: 1000px;
+    background: #FFF;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: var(--text-dark);
+    margin: 40px auto;
+}
+
+h1, h2 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 20px;
+    color: #444;
+}
+
+/* Destaques */
+.highlight {
+    background: var(--secondary-color);
+    color: var(--text-dark);
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.highlight2{
+    background-color:#ffc400 ;
+    color: var(--text-dark);
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+/* Botão principal */
+button {
+    background: var(--secondary-color);
+    color: var(--text-dark);
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #E6A700;
+}
+
+
+/* Seção Proposta de Valor */
+.proposta-valor {
+    background: var(--background-gradient);
+    color: var(--text-color);
+    text-align: center;
+    padding: 60px 30px;
+}
+
+.benefits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.benefit-item {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Botão CTA */
+.cta-btn {
+    display: inline-block;
+    background: var(--secondary-color);
+    color: var(--text-dark);
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.cta-btn:hover {
+    background: #FFC400;
+    transform: scale(1.05);
+}
+
+/* FAQ */
+.faq {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.faq h1 {
+    text-align: center;
+    color: #FFF;
+}
+
+.faq-question{
+color: #fff;
+
+}
+
+.faq-item {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #DDD;
+}
+
+.faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.faq-question:hover {
+    color: #852060;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    font-size: 18px;
+    color: #333;
+    background: #F5F5F5;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.arrow {
+    font-size: 16px;
+    transition: transform 0.3s;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+    
+    h1, h2 {
+        font-size: 20px;
+    }
+    
+    .benefit-item {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+    
+    .cta-btn {
+        font-size: 16px;
+        padding: 12px 24px;
+    }
+
+    #signupForm, #responseMessage {
+        display: block !important;
+        visibility: visible !important;
+    }
+    
+    
+}
